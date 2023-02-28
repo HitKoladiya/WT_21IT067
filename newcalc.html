@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>newCalc</title>
+</head>
+<body>
+    <input type="number" id="value1">
+    <input type="number" id="value2">
+    <input type="button" value="+" onclick="fun('+')">
+    <input type="button" value="-" onclick="fun('-')">
+    <input type="button" value="*" onclick="fun('*')">
+    <input type="button" value="/" onclick="fun('/')">
+    <br>
+    <hr>
+    <br>
+    <p id="ans"></p>
+
+
+    <script>
+        function fun(op){
+            var a=document.getElementById('value1').value;
+            var b=document.getElementById('value2').value;
+            console.log(a);
+            console.log(b);
+            var p=document.getElementById('ans');
+            a=parseInt(a);
+            b=parseInt(b); 
+            if(op=='+'){
+                p.innerHTML=`your ans=${a+b}`
+            }
+            else if(op=='-'){
+                p.innerHTML=`your ans=${a-b}`
+            }
+            else if(op=='*'){
+                p.innerHTML=`your ans=${a*b}`
+            }
+            else{
+                p.innerHTML=`your ans=${a/b}`
+            }
+        }
+    </script>
+</body>
+</html>

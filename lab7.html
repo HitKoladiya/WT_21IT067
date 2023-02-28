@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validation</title>
+    <style>
+    </style>
+</head>
+<body>
+    <div>
+        <form action="www.google.com" id="myForm">
+            <input type="text" id="formText" placeholder="enter detail">
+            <br>
+            <br>
+            <input type="text" name="email" id="formEmail" placeholder="enter email">
+            <br>
+            <br>
+            <input type="checkbox" name="subject" onclick="subjectCheckbox(this)">
+                <label for="checkbox">1</label>
+            <input type="checkbox" name="subject" onclick="subjectCheckbox(this)">
+                <label for="checkbox">2</label>
+            <input type="checkbox" name="subject" onclick="subjectCheckbox(this)">
+                <label for="checkbox">3</label>
+            <input type="checkbox" name="subject" onclick="subjectCheckbox(this)">
+                <label for="checkbox">4</label> 
+            <input type="checkbox" name="subject" onclick="subjectCheckbox(this)">
+                <label for="checkbox">5</label>
+            <input type="checkbox" name="subject" onclick="subjectCheckbox(this)">
+                <label for="checkbox">6</label>
+            <input type="checkbox" name="subject" onclick="subjectCheckbox(this)">
+                <label for="checkbox">7</label>
+            <input type="checkbox" name="subject" onclick="subjectCheckbox(this)">
+                <label for="checkbox">8</label>
+             
+                <br>
+                <br>
+
+            <input type="checkbox" name="sports" onclick="sportsCheckbox(this)">
+                <label for="checkbox">cricket</label>
+            <input type="checkbox" name="sports" onclick="sportsCheckbox(this)">
+                <label for="checkbox"></label>
+            <input type="checkbox" name="sports" onclick="sportsCheckbox(this)">
+                <label for="checkbox">3</label>
+            <input type="checkbox" name="sports" onclick="sportsCheckbox(this)">
+                <label for="checkbox">4</label>
+            <input type="checkbox" name="sports" onclick="sportsCheckbox(this)">
+                <label for="checkbox">5</label>
+                <br>
+                <br>
+            <input type="button" value="submit" onclick="validation()">
+        </form>
+    </div>
+    <div id="err">    
+    </div>
+    <script src="./javascript/lab7.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            background-color: #f4f4f4; 
+            text-align: center; 
+            padding: 20px; 
+            }
+        button { 
+            width: 100px; 
+            height: 35px; 
+            font-size: 16px; 
+            background-color: #c4564c; 
+            color: white; 
+            border: none; 
+            border-radius: 4px; 
+            cursor: pointer; 
+            }
+        #timeDiv{
+            background-color: rgb(113, 141, 165);
+            width: 200px;
+            text-align: center;
+        }
+        .timing{
+            width: 100px;
+            display: inline;
+        }
+        #mainDiv{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="maindiv">
+        <button id="start">Start</button>
+        <br>
+        <center>
+            <div id="timeDiv">
+                <div id="hour" class="timing"></div>
+                <div id="minit" class="timing"></div>
+                <div id="second" class="timing"></div>
+                <br>
+                <div id="tarikh" class="timing"></div>
+                <div id="month" class="timing"></div>
+                <div id="year" class="timing"></div>
+            </div>
+            <button id="end">stop</button>
+        </center>
+    </div>
+    <script src="./javascript/lab5.js"></script>
+</body>
+</html>

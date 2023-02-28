@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class</title>
+    <style>
+        body{
+            background-color:#cccccc;
+            /* background-image: url('./Assets/Ca6cCvOUcAAXX1U.jpg'); */
+            font-family:'Times New Roman';
+        }
+        form{
+            filter: blur(0px);
+            border:solid black 2px;
+            width: 500px;
+            padding: 15px; 
+            text-align: center;
+            color: black;
+            font-size: 20px;
+            font-weight: 500;
+            margin:0 auto;
+        }
+        label{
+            display: inline-block;
+            width: 100px;
+            text-align: right;
+        }
+        input[type=text], select, input[type=number], input[type=email], input[type=tel]{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            width: 300px;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type=button]{
+            width: 100px;
+            background-color: rgb(245, 15, 15);
+            color: rgb(255, 255, 255);
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type=button]:hover{
+            background-color: rgb(255, 255, 255);
+            color: black;
+        }
+        #detail{
+            border: 2px solid black;
+            border-radius: 4px;
+            width: 25%;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="#" onsubmit="return false">
+        <h2>Enter detail</h2>
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="id">id: </label>
+            <input type="text" id="id" name="id"><br><br>
+            <label for="1stCGPA">1stCGPA</label>
+            <input type="number" id="1stCGPA" name="1stCGPA"><br><br>
+            <label for="2stCGPA">2stCGPA: </label>
+            <input type="number" id="2stCGPA" name="2stCGPA"><br><br>
+            <label for="3stCGPA">3stCGPA: </label>
+            <input type="number" id="3stCGPA" name="3stCGPA"><br><br>
+            <input type="button" value="Submit" onclick="call()">
+    </form>
+    <br>
+    <hr>
+    <br> 
+    <center>
+        <div id="detail">
+
+        </div>
+    </center>
+    <script src="./javascript/lab6.js"></script>
+</body>
+</html>

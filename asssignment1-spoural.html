@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spoural Event</title>
+    <style>
+        img{
+            width: 100%;
+            height: 300px;
+        }
+        #mainImage{
+            height: 600px;
+        }
+        #marq{
+            background: rgb(220, 74, 74);
+            height: 50px;
+            width: 100%;
+            text-align: center;
+        }
+        marquee{
+            color: white;
+            font-size: 30px;
+            padding: 3px 0px;
+        }
+        body{
+            background-color:#cccccc;
+            /* background-image: url('./Assets/Ca6cCvOUcAAXX1U.jpg'); */
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        h1{
+            text-align: center;
+            color: black;
+            font-size: 50px;
+            font-weight: 700;
+        }
+        p{
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color:black;
+            font-size: 20px;
+            font-weight: 500;
+        }
+        h2{
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: black;
+            font-size: 30px;
+            font-weight: 600;
+        }
+        form{
+            filter: blur(0px);
+            border:solid black 2px;
+            width: 500px;
+            padding: 15px; 
+            text-align: center;
+            color: black;
+            font-size: 20px;
+            font-weight: 500;
+            margin:0 auto;
+        }
+        label{
+            display: inline-block;
+            width: 100px;
+            text-align: right;
+        }
+        input[type=text], select, input[type=number], input[type=email], input[type=tel]{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            width: 300px;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type=submit]{
+            width: 100px;
+            background-color: rgb(245, 15, 15);
+            color: rgb(255, 255, 255);
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type=submit]:hover{
+            background-color: rgb(255, 255, 255);
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <img id="mainImage" src="./Assets/maxresdefault.jpg" alt="Spoural Event">
+    <hr>
+    <br> 
+    <h1><b>SPOURAL 2K23- THE MOST AWAITED EVENT !!</b></h1>
+    <div>
+        <p><i><b>The most anticipated event for Charusatians, SPOURAL 2k23, will take place from January 23 to February 11, 
+            2k23. The spoural is a celebration of the yearly cultural and sports week. Each year, the event is held with 
+            the goal of fostering students' overall growth and bringing to light any untapped talents among them. Aside
+            from artistic competitions like paintings, elocution, debate, the Mr. and Miss Charusat Pageant, ad mad show, 
+            photography, documentary film making, quiz, clay modelling, and others, there are also performances of singing,
+            dance, fashion shows, mimicry, drama, and more. Sports competitions like basketball, kabaddi football, table 
+            tennis, and many more are organised as off-stage activities. To take part in these fantastic activities, kindly 
+            register below. Together, let's make it a huge success with wonderful memories</b>.</i></p>
+    </div>
+    <br>
+    <div id="marq">
+        <marquee direction="right" loop="-1" scrollamount="20" width="100%"><b>Registeration is Open</b></marquee>
+    </div>
+    <br>
+    <div id="formDiv">
+        <form action="#" onsubmit="call(this);return false">
+            <h2>Register for the event</h2>
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="phone">Phone: </label>
+                <input type="number" id="phone" name="phone"><br><br>
+                <label for="college">College: </label>
+                <input type="text" id="college" name="college"><br><br>
+                <label for="year">Year: </label>
+                <input type="number" id="year" name="year"><br><br>
+                <label for="branch">Branch: </label>
+                <input type="text" id="branch" name="branch"><br><br>
+                <label for="event">Event: </label>
+                <select id="event" name="event" id="activity">
+                    <option value="dance">Dance</option>
+                    <option value="music">Music</option>
+                    <option value="quiz">Quiz</option>
+                    <option value="debate">Debate</option>
+                    <option value="skit">Skit</option>
+                    <option value="art">Art</option>
+                    <option value="photography">Photography</option>
+                    <option value="drama">Drama</option>
+                    <option value="sports">Sports</option>
+                </select><br><br>
+                <input type="submit" value="Submit">
+        </form> 
+    </div>
+<script>
+    async function call(){
+        console.log('hii')
+        const name=document.getElementById('name');
+        const email=document.getElementById('email');
+        const phone=document.getElementById('phone');
+        const college=document.getElementById('college');
+        const year=document.getElementById('year');
+        const branch=document.getElementById('branch');
+        const activity=document.getElementById('activity');
+        // const selected=activity.options[activity.selectedIndex].text;
+        user={
+            name:name,
+            email:email,
+            phone:phone,
+            college:college,
+            year:year,
+            branch:branch,
+            // activity:activity
+        }
+        await window.confirm(user);
+        // console.log(user);
+    }
+</script>
+</body>
+</html>
