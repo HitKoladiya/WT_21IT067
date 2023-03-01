@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Form Validation </title>
+</head>
+<style>
+    body{
+            background-color:#cccccc;
+            /* background-image: url('./Assets/Ca6cCvOUcAAXX1U.jpg'); */
+            font-family:'Times New Roman';
+        }
+        form{
+            display: block;
+            filter: blur(0px);
+            border:solid black 2px;
+            width: 800px;
+            padding: 15px; 
+            text-align: center;
+            color: black;
+            font-size: 20px;
+            font-weight: 500;
+            margin:0 auto;
+        }
+        label{
+            display: inline-block;
+            width: 100px;
+            text-align: right;
+        }
+</style>
+
+<body>
+    <form onsubmit="return validateForm()">
+        <label for="userid">User ID</label>
+        <input type="text" name="userid" id="userid" required>
+        <div id="useridError"></div>
+        <br><br>
+        <label for="password">Password</label>
+        <input type="text" name="password" id="password" required>
+        <div id="passwordError"></div>
+        <br><br>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" required>
+        <div id="nameError"></div>
+        <br><br>
+        <label for="address">Address</label>
+        <input type="text" name="address" id="address">
+        <br><br>
+        <label for="country">Country</label>
+        <select name="country" id="country" required>
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+        </select>
+        <br><br>
+        <label for="zipcode">Zip Code</label>
+        <input type="number" name="zipcode" id="zipcode" required>
+        <div id="zipcodeError"></div>
+        <br><br>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required>
+        <div id="emailError"></div>
+        <br><br>
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label>
+        <div id="genderError"></div>
+        <br><br>
+        <label for="languages">Languages:</label>
+        <input type="checkbox" id="english" name="languages" value="english">
+        <label for="english">English</label>
+        <input type="checkbox" id="hindi" name="languages" value="hindi">
+        <label for="hindi">Hindi</label>
+        <input type="checkbox" id="gujarati" name="languages" value="gujarati">
+        <label for="gujarati">Gujarati</label>
+        <input type="checkbox" id="french" name="languages" value="french">
+        <label for="french">French</label>
+        <div id="languagesError"></div>
+        <br><br>
+        <label for="about">About-Yourself</label>
+        <br>
+        <textarea name="about" id="about" cols="30" rows="10"></textarea>
+        <br><br>
+        <input type="submit" value="Submit" onclick="">
+    </form>
+    <script src="./javascript/lab8.js"></script>
+</body>
+
+</html>
