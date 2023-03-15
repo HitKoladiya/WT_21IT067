@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>unit-1</title>
+</head>
+
+<body>
+    <form action="#" onsubmit="return false" id="form">
+        <label for="userid">ID</label>
+        <input type="text" name="userid" id="userid">
+        <div id="useridError"></div>
+        <br><br>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name">
+        <div id="nameError"></div>
+        <br><br>
+        <label for="semester">semester</label>
+        <input type="number" name="semester" id="semester">
+        <div id="semesterError"></div>
+        <br><br>
+        <label for="skills">skills:</label>
+        <input type="checkbox" id="c" name="skills" value="c">
+        <label for="c">c</label>
+        <input type="checkbox" id="c++" name="skills" value="c++">
+        <label for="c++">c++</label>
+        <input type="checkbox" id="javascript" name="skills" value="javascript">
+        <label for="javascript">javascript</label>
+        <input type="checkbox" id="java" name="skills" value="java">
+        <label for="java">java</label>
+        <div id="languagesError"></div>
+        <br><br>
+        <label for="cgpa">cgpa</label>
+        <input type="text" name="cgpa" id="cgpa">
+        <div id="cgpaError"></div>
+        <br><br>
+        <label for="age">age</label>
+        <input type="number" name="age" id="age">
+        <div id="ageError"></div>
+        <br><br>
+        <label for="Address">Address</label>
+
+        <label for="city">city</label>
+        <input type="text" name="city" id="city">
+        <div id="cityError"></div>
+        <br><br>
+        <label for="state">state</label>
+        <input type="text" name="state" id="state">
+        <div id="stateError"></div>
+        <br><br>
+        <input type="button" value="Submit" id="submit">
+        <br>
+        <hr>
+        <br>
+    </form>
+    <div>
+        <label for="search">Search</label>
+        <select name="key" id="searchKey" required>
+            <option value="userid">userid</option>
+            <option value="name">name</option>
+            <option value="semester">semester</option>
+            <option value="skills">skills</option>
+            <option value="cgpa">cgpa</option>
+            <option value="age">age</option>
+            <option value="city">city</option>
+            <option value="state">state</option>
+        </select>
+        <input type="text" name="search" id="searchValue" required>
+        <br><br>
+        <input type="button" value="Search" id="search">
+
+    </div>
+        <div id="carTable" border="red">
+            <table border="2px solid black">
+                <thead>
+                    <tr>
+                        <td>userid</td>
+                        <td>name</td>
+                        <td>semester</td>
+                        <td>skills</td>
+                        <td>cgpa</td>
+                        <td>age</td>
+                        <td>city</td>
+                        <td>state</td>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                </tbody>
+            </table>
+        </div>
+        <hr>
+        <div>
+            <label for="noOfStudent">student:</label>
+            <p id="noOfStudent"></p>
+            <label for="meanAge">meanAge:</label>
+            <p id="meanAge"></p>
+        </div>
+
+    <script src="./javascript/u1.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #image {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="image">
+
+    </div>
+    <script>
+        setInterval(displayDog, 3000);
+        function displayDog() {
+            let url = 'https://dog.ceo/api/breeds/image/random'
+            let div = document.getElementById('image');
+            console.log(url);
+            fetch(url)
+                .then((response) => {
+                    console.log(response);
+                    return response.json()
+                })
+                .then(data => {
+                    console.log(data);
+                    div.innerHTML = `<img src="${data.message}" alt="" width=500 height=500>`
+                })
+                .catch(err => console.log(err));
+        }
+
+    </script>
+</body>
+
+</html>
