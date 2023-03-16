@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Gym</title>
+    <style>
+        #navbar{
+            position:fixed;
+            background-color: rgb(19, 18, 18);
+            display: flex;
+            font-weight: bold;
+            width: 100%;
+            height: 2rem;
+            padding-top:10px;
+        }
+        a{
+            all: unset;
+            margin-right:2rem;
+        }
+        #home{
+            margin-left: 20px;
+        }
+        #container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* border: 2px solid red; */
+            /* z-index: -2; */
+        }
+        body{
+            background-color: black;
+            margin: 0px;
+            padding: 0px;
+            /* background-image:url('./Assets/car-2.webp'); */
+            /* z-index: -1; */
+        }
+        img{
+            position: absolute;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            opacity: 0.7;
+        }
+        h1{
+            margin: 50px;
+        }
+        body{
+            color: white;
+        }
+        #heading{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <img src="./Assets/car-2.webp" alt="">
+        <nav id="navbar">
+            <a href="./testGym.html" id="home">home</a>
+            <a href="about" id="about">about</a>
+            <a href="./gallary.html" id="gallary">gallary</a>
+            <a href="help" id="help">help</a>
+        </nav>
+        <!-- <img src="./Assets/car-2.webp" alt="please reload"> -->
+    </div>
+    <div id="heading">
+        <h1>Welcome to my page</h1>
+    </div>
+    
+    
+</body>
+</html>
